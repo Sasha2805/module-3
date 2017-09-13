@@ -8,6 +8,14 @@ public class SearchRepetitions {
         System.out.println("Введите размер массива:");
         arrayNumbers = new int[in.nextInt()];
 
+        //Call methods
+        arrayFilling(arrayNumbers, in);
+        maxRepeat(arrayNumbers);
+        minRepeat(arrayNumbers);
+
+    }
+
+    public static void arrayFilling(int[] arrayNumbers, Scanner in) {
         for (int i = 0; i < arrayNumbers.length; i++){
             System.out.println("Введите " + (i + 1) + " елемент:");
             if (in.hasNextInt()){
@@ -17,10 +25,6 @@ public class SearchRepetitions {
                 break;
             }
         }
-
-        //Call methods
-        //maxRepeat(arrayNumbers);
-        //minRepeat(arrayNumbers);
 
     }
 
