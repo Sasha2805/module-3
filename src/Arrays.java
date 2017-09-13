@@ -8,6 +8,16 @@ public class Arrays {
         System.out.println("Введите размер массива:");
         arrayNumbers = new int[in.nextInt()];
 
+        //Call methods
+        arrayFilling(arrayNumbers, in);
+        searchMinValue(arrayNumbers);
+        searchMaxValue(arrayNumbers);
+        searchRepetitions(arrayNumbers, 5);
+        insertionSort(arrayNumbers);
+
+    }
+
+    public static void arrayFilling(int[] arrayNumbers, Scanner in) {
         for (int i = 0; i < arrayNumbers.length; i++){
             System.out.println("Введите " + (i + 1) + " елемент:");
             if (in.hasNextInt()){
@@ -17,12 +27,6 @@ public class Arrays {
                 break;
             }
         }
-
-        //Call methods
-        //searchMinValue(arrayNumbers);
-        //searchMaxValue(arrayNumbers);
-        //searchRepetitions(arrayNumbers, 5);
-        //insertionSort(arrayNumbers);
 
     }
 
